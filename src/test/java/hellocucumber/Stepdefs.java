@@ -29,4 +29,9 @@ public class Stepdefs {
     public void today_is_Friday() {
         today = "Friday";
     }
+
+    @Given("today is {string}")
+    public void today_is(String today) {
+        this.today = today;
+    }
 }
